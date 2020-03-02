@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/omprakash0210/flask-app.git
     targetRevision: HEAD
-    path: flask-app
+    path: web/flask_v1
     directory:
       recurse: true
   destination:
