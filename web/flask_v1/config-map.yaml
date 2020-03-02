@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: example-config
+  name: flask-config
 data:
   config.json: |
     {
