@@ -35,15 +35,3 @@ spec:
             requests:
               cpu: 50m
               memory: 64Mi
-          volumeMounts:
-            - mountPath: /secrets/
-              name: secret-volume
-            - mountPath: /configs/
-              name: config-volume
-        volumes:
-          - name: secret-volume
-            secret:
-              secretName: mysecret
-          - name: config-volume
-            configMap:
-              name: example-config
