@@ -23,10 +23,13 @@ spec:
 apiVersion: apps/v1
 kind: Pod
 metadata:
-   name: flask-pod
+  labels:
+    app.kubernetes.io/instance: flask-app
+  name: flask-pod
+  namespace: argocd
 spec:
-   containers:
-   - name: flask-app
-     image: omprakash4pt/flask-app:v1
-     ports:
-     - containerPort: 5001
+  containers:
+    - image: 'omprakash4pt/flask-app:v1'
+      name: flask-app
+      ports:
+        - containerPort: 5001
