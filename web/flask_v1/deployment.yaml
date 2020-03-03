@@ -5,7 +5,7 @@ metadata:
   labels:
     app: flask-app
     app.kubernetes.io/instance: flask-app
-  name: flask-deploy
+  name: flask-app
   namespace: argocd
 spec:
   replicas: 2
