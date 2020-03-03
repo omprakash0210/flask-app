@@ -40,3 +40,10 @@ spec:
               name: secret-volume
             - mountPath: /configs/
               name: config-volume
+        volumes:
+          - name: secret-volume
+            secret:
+              secretName: mysecret
+          - name: config-volume
+            configMap:
+              name: example-config
