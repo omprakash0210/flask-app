@@ -19,3 +19,14 @@ spec:
         image: flask-app:v1
         ports:
         - containerPort: 5001
+---
+apiVersion: apps/v1
+kind: Pod
+metadata:
+   name: flask-pod
+spec:
+   containers:
+   - name: flask-app
+     image: omprakash4pt/flask-app:v1
+     ports:
+     - containerPort: 5001
